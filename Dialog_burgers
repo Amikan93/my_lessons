@@ -1,0 +1,38 @@
+#include <iostream>
+#include "windows.h"
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    std::string nameburgers;
+    int time;
+    std::string profession;
+    float price;
+    std::string answer;
+
+
+    std::cout << ">>Ты заходишь в бургерную<<" << std::endl;
+    Sleep(1000);
+    std::cout << ">>Вы выбираете бургер<<" << std::endl;
+    Sleep(1000);
+    std::cout << "/Какой бургер ты выбрал?/" << std::endl;
+    Sleep(1000);
+    std::cin >> nameburgers;
+    std::cout << "Ты: " << nameburgers << std::endl;
+    Sleep(1000);
+    std::cout << "Продавец: его стоимость " << std::endl;
+    std::cout << "enter the cost->> ";
+    Sleep(1000);
+    std::cin >> price;
+    Sleep(1000);
+    std::cout << "Как вы будите оплачивать?" << std::endl;
+    std::cout << "enter your payment method->> " << std::endl;
+    Sleep(1000);
+    std::cin >> answer;
+    Sleep(1000);
+    std::cout << "Самовывоз или доставка?" << std::endl;
+    Sleep(1000);
+    std::cin >> answer;
+    std::cout << "Заказ будет готов через 10 минут";
+ }
